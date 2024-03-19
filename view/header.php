@@ -31,7 +31,7 @@
         <div class="login">
             <a href="#" class="user"> <i class="fa-solid fa-user" style="font-size: 20px; color:black; margin-right:15px "></i></a> 
             
-            <a href="#" class="cart"><i class="fa-solid fa-cart-shopping" style=" font-size: 20px;color:black "></i></a> 
+            <a href="#" class="cart"><i class="fa-solid fa-shopping-basket" style=" font-size: 20px;color:black "></i></a> 
 
         </div>
     </header>

@@ -37,7 +37,7 @@
                 <div class="pro">
                     <div class="product">
                         <img src="../image/product1.jpg" alt="">
-                        <a href="#">Product 1</a><br>
+                        <a href="index.php?act=chitietsanpham">Product 1</a><br>
                         <span>£60.00</span>
                     </div>
                     <div class="product">
