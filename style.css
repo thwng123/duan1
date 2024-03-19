@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+  }
+header {
+    background-color: #fff;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sreach input[type="text"] {
+    width:400px;
+    font-size:13px;
+    height:48px;
+    padding: 0px 70px 0 20px !important;
+    border-top-left-radius: 20px ;
+    border-bottom-left-radius: 20px;
+}
+
+.sreach button {
+    /* backgroud:#cdc9c9; */
+    background: inherit;
+    height:98%;
+    width:50px;
+    border-top-right-radius: 20px ;
+    border: #333 1px solid;
+    border-bottom-right-radius: 20px;
+    padding: 1px 6px;
+    
+}
+
+
+nav {
+    background-color: #fff;
+    padding: 0.5rem 1.4rem 0.5rem 1.4rem;
+    /* text-align: center; */
+}
+.menu {
+    margin-left: 178px;
+}
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 4rem;
+    font-size: 13px;
+}
+
+nav a:hover {
+    color: #ff6a28;
+    
+}
+
+nav i {
+    color: #333;
+    margin-right: 1rem;
+}
+main {
+    padding: 1rem;
+}
+
+
+.banner img {
+    width: 100%;
+    height: 550px;
+}
+
+header .sreach input {
+    height: 40px;
+    /* line-height: 50px; */
+    border: 1px solid #333;
+}
+h2 {
+    text-align: center;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.box-main img {
+    width: 100%;
+    height: auto;
+   
+}
+
+.box-main img:hover {
+    
+    opacity: 0.5;
+}
+
+
+.box-phu h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.box-phu .pro{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.box-phu .pro .product img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.box-phu .pro .product img:hover{
+    opacity: 0.5;
+}
+
+.box-phu .pro .product a{
+   color: #999999;
+   text-decoration: none;
+}
+
+.blog-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.blog h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.blog .blog-main .blog-detail .themes {
+    color: #ff6a28;
+}
+
+.blog .blog-main .blog-detail p {
+   font-size: 13px;
+  
+}
+
+.blog .blog-main .blog-detail h3 a {
+    color:  #242424;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.blog .blog-main .blog-detail img {
+    display: block;
+    width: 100%;
+}
+
+.ins h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.box-ins {
+    max-width: 1400px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.box-ins .ins-detail img {
+    width: 100%;
+}
+
+footer {
+    max-width: 1200px;
+    background-color: #fff;
+    margin: 0 auto;
+    color: #fff;
+    padding: 1rem;
+    /* text-align: center; */
+}
+
+footer .info {
+    display: flex;
+    gap: 116px;
+}
+
+footer .box-info ul li {
+    list-style: none;
+
+}
+
+footer .box-info {
+    display: flex;
+
+}
+
+footer .box-info .infos ul li a {
+    text-decoration: none;
+    color: #747474;
+    font-size: 13px;
+    line-height: 30px;
+
+}
+
+footer .box-info .infos ul li h4 {
+    /* text-decoration: none; */
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+footer .box-about .infos ul li a {
+    text-decoration: none;
+    color: #747474;
+    font-size: 13px;
+    line-height: 30px;
+
+}
+
+footer .box-about .infos ul li h4 {
+    /* text-decoration: none; */
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer .box-about .infos ul li input {
+    /* text-decoration: none; */
+   width: 100%;
+   padding: 0 20px;
+   border: 1px solid #e1e1e1;
+   height: 45px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 13px;
+
+}
+
+footer .box-about .infos ul li input[type="submit"]:hover {
+    /* text-decoration: none; */
+   background-color: #ff6a28;
+
+}
+
