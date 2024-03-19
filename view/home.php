@@ -154,6 +154,7 @@
             </div>
 
         </div>
+        <hr style="max-width:1100px; margin:0 auto; margin-top:65px;margin-bottom:50px">
 
         <div class="ins">
             <h2>Theo dõi chúng tôi trên Instagram</h2>
@@ -176,7 +177,9 @@
 
             </div>
         </div>
+        <!-- <hr style="max-width:1200px; margin:0 auto; margin-bottom:65px"> -->
 
     </main>
-    <hr>
+    <hr style="max-width:1400px; margin:0 auto; margin-top:65px;margin-bottom:50px">
+    <hr style="max-width:1100px; margin:0 auto; margin-top:65px;margin-bottom:50px">
     
