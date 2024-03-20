@@ -8,6 +8,7 @@
     $spnew = load_sp_home();
     $spnewnam = load_sp_homenam();
     $spnewnu = load_sp_homenu();
+    $blog = load_blog_home();
 
     // /$spcl = loadone_sanphamcl($product_id,$cate_id);
     
@@ -30,6 +31,14 @@
                 break;
             case 'gioithieu':
                 include 'gioithieu.php';
+                break;
+            case 'nam':
+                $spnewnam = load_all_homenam();
+                include 'nam.php';
+                break;
+            case 'nu':
+                $spnewnu = load_all_homenu();
+                include 'nu.php';
                 break;
             
             default:

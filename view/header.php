@@ -37,8 +37,8 @@
     </header>
     <nav>
         <div class="menu">
-            <a href="#">Nam</a>
-            <a href="#">Nữ</a>
+            <a href="index.php?act=nam">Nam</a>
+            <a href="index.php?act=nu">Nữ</a>
             <a href="#">Liên hệ</a>
             <a href="#">Blog</a>
             <a href="index.php?act=gioithieu">Về chúng tôi</a>

@@ -2,8 +2,10 @@
 <div class="box-spct">
     <ul>
         <li><a href="index.php?act=home">Trang chủ </a></li>
-        <li> / </li>
+        <li> > </li>
         <li> Chi tiết sản phẩm</li>
+        <li> > </li>
+        <li><?php echo $onesp['product_name']?></li>
     </ul>
 
     <div class="detail-spct">
@@ -40,6 +42,11 @@
                     <option value="M">M</option>
                     <option value="L">L</option>
                 </select>
+            </div>
+
+            <div class="product-quantity">
+                <h3>Số lượng</h3>
+                <input type="number" min="1" max="100" value="1" >
             </div>
             <button type="submit">THÊM VÀO GIỎ HÀNG</button>
             <div class="box-spct-cm">

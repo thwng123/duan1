@@ -51,12 +51,29 @@ function load_sp_homenam(){
     return $sp;
 }
 
+function load_all_homenam(){
+    $sql="SELECT * FROM `products` WHERE cate_id = 1 ";
+    $sp = pdo_query($sql);
+    return $sp;
+}
+
 function load_sp_homenu(){
     $sql="SELECT * FROM `products` WHERE cate_id = 2 limit 0,6";
     $sp = pdo_query($sql);
     return $sp;
 }
 
+function load_all_homenu(){
+    $sql="SELECT * FROM `products` WHERE cate_id = 2 ";
+    $sp = pdo_query($sql);
+    return $sp;
+}
+
+function load_blog_home(){
+    $sql="SELECT * FROM `blog` WHERE 1";
+    $sp = pdo_query($sql);
+    return $sp;
+}
 
 function load_sp_home(){
     $sql="SELECT * FROM `products` WHERE 1 limit 0,6";
@@ -104,6 +121,8 @@ function updatesp($ten,$gia,$tenanh,$mota,$soluong,$danhmuc,$id){
        
        
 }
+
+
 
 
 

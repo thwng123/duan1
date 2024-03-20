@@ -97,30 +97,23 @@
         <div class="blog">
             <h2>Blog mới nhất</h2>
             <div class="blog-main">
-                <div class="blog-detail">
-                    <img src="../image/blog/blog1.jpg" alt="">
-                    <h3>
-                        <a href="#">Mercedes Benz– Mirror To The Soul 360</a>
-                    </h3>
-                    <p>By <span class="themes">Ecommerce Themes</span>/ 30 Oct 2024</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore labore placeat ut est minima deleniti animi nemo quae et qui eum, quibusdam voluptates sit consectetur doloribus debitis? Modi, ab eum!</p>
-                </div>
-                <div class="blog-detail">
-                    <img src="../image/blog/blog2.jpg" alt="">
-                    <h3>
-                        <a href="#">Trải nghiệm thời trang đầu tiên của Dior F/W 2023</a>
-                    </h3>
-                    <p>By <span class="themes">Ecommerce Themes</span>/ 30 Oct 2024</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore labore placeat ut est minima deleniti animi nemo quae et qui eum, quibusdam voluptates sit consectetur doloribus debitis? Modi, ab eum!</p>
-                </div>
-                <div class="blog-detail">
-                    <img src="../image/blog/blog3.jpg" alt="">
-                    <h3>
-                        <a href="#">London Fashion Week & Royal Day</a>
-                    </h3>
-                    <p>By <span class="themes">Ecommerce Themes</span>/ 30 Oct 2024</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore labore placeat ut est minima deleniti animi nemo quae et qui eum, quibusdam voluptates sit consectetur doloribus debitis? Modi, ab eum!</p>
-                </div>
+
+                <?php
+                    foreach ($blog as $key) {
+                    
+                ?>
+                    <div class="blog-detail">
+                        <img src="../image/blog/<?php echo $key['image']?>" alt="">
+                        <h3>
+                            <a href="#"><?php echo $key['tittle']?></a>
+                        </h3>
+                        <p>By <span class="themes"><?php echo $key['author']?></span>/ <?php echo $key['create_at']?></p>
+                        <p><?php echo $key['content']?></p>
+                    </div>
+                <?php
+                    }
+                ?>
+               
             </div>
 
         </div>
