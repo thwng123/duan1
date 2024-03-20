@@ -21,19 +21,31 @@ header {
     font-size:13px;
     height:48px;
     padding: 0px 70px 0 20px !important;
-    border-top-left-radius: 20px ;
-    border-bottom-left-radius: 20px;
+    /* border-top-left-radius: 20px ;
+    border-bottom-left-radius: 20px; */
 }
 
 .sreach button {
     /* backgroud:#cdc9c9; */
     background: inherit;
-    height:98%;
+    height:47px;
     width:50px;
-    border-top-right-radius: 20px ;
+    border-top-right-radius: 25px ;
     border: #333 1px solid;
-    border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 25px;
     padding: 1px 6px;
+    
+}
+.sreach select {
+    /* backgroud:#cdc9c9; */
+    border: 0;
+    background: #f6f6f6;
+    border-right: 1px solid #ddd;
+    height: 48px;
+    border-radius: 0;
+    line-height: 48px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
     
 }
 

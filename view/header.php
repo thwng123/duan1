@@ -22,12 +22,21 @@
             </a>
         </div>
 
-
-        <div class="sreach">
+        <form action="?act=search" method="post">
+            <div class="sreach">
+                <select name="cate" id="">
+                    <option value=""></option>
+                </select>
+                <input type="text" name="kyw"  placeholder="Search entire store here...">
+               
+                <button type="submit"><i class="fa-solid fa-search" style="font-size: 17px; color:#747474;padding:1px 6px "></i></button>
+            </div>  
+        </form>
+        <!-- <div class="sreach">
             <input type="text"  placeholder="Search entire store here...">
-            <!-- <input type="button" value="" style="backgroud:#cdc9c9;width:100px; border-top-right-radius: 20px ; border-bottom-right-radius: 20px">> -->
+            
             <button ><i class="fa-solid fa-search" style="font-size: 17px; color:#747474;padding:1px 6px "></i></button>
-        </div>  
+        </div>   -->
         <div class="login">
             <a href="#" class="user"> <i class="fa-solid fa-user" style="font-size: 20px; color:black; margin-right:15px "></i></a> 
             
