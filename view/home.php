@@ -35,37 +35,22 @@
                 <h4 style="text-alight:center;">Bộ sưu tập dành cho nữ</h4>
 
                 <div class="pro">
-                    <div class="product">
-                        <img src="../image/product1.jpg" alt="">
-                        <a href="index.php?act=chitietsanpham">Product 1</a><br>
-                        <span>£60.00</span>
-                    </div>
-                    <div class="product">
-                        <img src="../image/product6.jpg" alt="">
-                        <a href="#">Product 2</a><br>
-                        <span>£60.00</span>
-                    </div>
-                    <div class="product">
-                        <img src="../image/product7.jpg" alt="">
-                        <a href="#">Product 3</a><br>
-                        <span>£60.00</span>
+                    <?php
+                        foreach($spnewnu as $sp){
+                            // extract($sp);
+                            
                         
-                    </div>
-                    <div class="product">
-                        <img src="../image/product14.jpg" alt="">
-                        <a href="#">Product 4</a><br>
-                        <span>£60.00</span>
-                    </div>
-                    <div class="product">
-                        <img src="../image/product16.jpg" alt="">
-                        <a href="#">Product 5</a><br>
-                        <span>£60.00</span>
-                    </div>
-                    <div class="product">
-                        <img src="../image/product19.jpg" alt="">
-                        <a href="#">Product 6</a><br>
-                        <span>£60.00</span>
-                    </div>
+                    ?>
+                        <div class="product">
+                            <img src="../image/<?= $sp['image']?>" alt="">
+                            <a href="index.php?act=chitietsanpham&product_id=<?php echo $sp['product_id']?>"><?= $sp["product_name"]?></a><br>
+                            <span><?= $sp['price']?></span>
+                        </div>
+                    <?php
+                        }
+                    ?>
+
+
                 </div>
 
                 
@@ -81,37 +66,22 @@
                 <h4 style="text-alight:center;">Bộ sưu tập dành cho nam</h4>
 
                 <div class="pro">
-                    <div class="product">
-                        <img src="../image/product1.jpg" alt="">
-                        <a href="#">Product 1</a><br>
-                        <span>£60.00</span>
-                    </div>
-                    <div class="product">
-                        <img src="../image/product6.jpg" alt="">
-                        <a href="#">Product 2</a><br>
-                        <span>£60.00</span>
-                    </div>
-                    <div class="product">
-                        <img src="../image/product7.jpg" alt="">
-                        <a href="#">Product 3</a><br>
-                        <span>£60.00</span>
+                    <?php
+                        foreach($spnewnam as $sp){
+                            // extract($sp);
+                            
                         
-                    </div>
-                    <div class="product">
-                        <img src="../image/product14.jpg" alt="">
-                        <a href="#">Product 4</a><br>
-                        <span>£60.00</span>
-                    </div>
-                    <div class="product">
-                        <img src="../image/product16.jpg" alt="">
-                        <a href="#">Product 5</a><br>
-                        <span>£60.00</span>
-                    </div>
-                    <div class="product">
-                        <img src="../image/product19.jpg" alt="">
-                        <a href="#">Product 6</a><br>
-                        <span>£60.00</span>
-                    </div>
+                    ?>
+                        <div class="product">
+                            <img src="../image/<?= $sp['image']?>" alt="">
+                            <a href="index.php?act=chitietsanpham&product_id=<?php echo $sp['product_id']?>"><?= $sp["product_name"]?></a><br>
+                            <span><?= $sp['price']?></span>
+                        </div>
+                    <?php
+                        }
+                    ?>
+
+
                 </div>
 
                 

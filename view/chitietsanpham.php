@@ -8,10 +8,10 @@
 
     <div class="detail-spct">
         <div class="img-spct">
-            <img src="../image/product1.jpg" alt="">
+            <img src="../image/<?php echo $onesp['image']?>" alt="">
         </div>
         <div class="content-spct">
-            <h1>Amazon Cloud Cam</h1>
+            <h1><?php echo $onesp['product_name']?></h1>
             <div class="box-spct-cm">
                 <ul>
                     <li><i class="fa-solid fa-star" style="font-size: 13px; color:#ff6a28"></i></li>
@@ -23,8 +23,8 @@
                     <li><a href="#"> Viết đánh giá </a></li>
                 </ul>
             </div>
-            <span>$70.00</span>
-            <p>Chất liệu Airycool Điều Hòa Thành phần: 88%Nylon, 12%Spandex VẢI CHẠM MÁT, HẠ NHIỆT - Công nghệ làm mát Freezing giúp tiêu tán bức xạ nhiệt nhanh chóng. Bề vải chạm mát NGAY TỨC THÌ. KHÔNG BAI DÃO, SỢI CO GIÃN TÔN DÁNG</p>
+            <span><?php echo $onesp['price']?></span>
+            <p><?php echo $onesp['description']?></p>
             <div class="product-color">
                 <h3>Color</h3>
                 <select name="color_name" id="">
@@ -63,8 +63,22 @@
     
     <h2>Sản phẩm liên quan</h2>
     <p>Các thiết kế hiện đại, tối giản và hiện đại thể hiện chữ viết tay Lavish Alice</p>
-    <div class="product-cl">      
-        <div class="product">
+    <div class="product-cl">   
+        <?php
+            foreach ($spcl as $key) {
+                
+            
+        ?>   
+            <div class="product">
+                <img src="../image/<?php echo $key['image']?>"alt="">
+                <a href="index.php?act=chitietsanpham&product_id=<?php echo $key['product_id']?>"><?php echo $key['product_name']?></a><br>
+                <span><?php echo $key['price']?></span>
+                                
+            </div>   
+        <?php
+            }
+        ?>
+        <!-- <div class="product">
             <img src="../image/product11.jpg" alt="">
             <a href="#">Product 1</a><br>
            <span>£60.00</span>
@@ -87,7 +101,7 @@
             <a href="#">Product 4</a><br>
            <span>£60.00</span>
                         
-        </div>       
+        </div>        -->
     </div>
     
     
@@ -97,8 +111,23 @@
     
     <h2>Best seller</h2>
     <p>Các thiết kế hiện đại, tối giản và hiện đại thể hiện chữ viết tay Lavish Alice</p>
-    <div class="product-cl">      
-        <div class="product">
+    <div class="product-cl">     
+        <?php
+            foreach ($dstop4 as $sp) {
+                
+            
+        ?> 
+            <div class="product">
+                <img src="../image/<?php echo $sp['image']?>" alt="">
+                <a href="#"><?php echo $sp['product_name']?></a><br>
+                <span><?php echo $sp['price']?></span>
+                            
+            </div> 
+
+        <?php 
+            }
+        ?>
+        <!-- <div class="product">
             <img src="../image/product11.jpg" alt="">
             <a href="#">Product 1</a><br>
            <span>£60.00</span>
@@ -121,7 +150,7 @@
             <a href="#">Product 4</a><br>
            <span>£60.00</span>
                         
-        </div>       
+        </div>        -->
     </div>
     
     
