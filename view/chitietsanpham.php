@@ -25,7 +25,7 @@
                     <li><a href="#"> Viết đánh giá </a></li>
                 </ul>
             </div>
-            <span><?php echo $onesp['price']?></span>
+            <span>$<?php echo $onesp['price']?></span>
             <p><?php echo $onesp['description']?></p>
             <div class="product-color">
                 <h3>Color</h3>
@@ -79,7 +79,7 @@
             <div class="product">
                 <img src="../image/<?php echo $key['image']?>"alt="">
                 <a href="index.php?act=chitietsanpham&product_id=<?php echo $key['product_id']?>"><?php echo $key['product_name']?></a><br>
-                <span><?php echo $key['price']?></span>
+                <span>$<?php echo $key['price']?></span>
                                 
             </div>   
         <?php
@@ -126,8 +126,8 @@
         ?> 
             <div class="product">
                 <img src="../image/<?php echo $sp['image']?>" alt="">
-                <a href="#"><?php echo $sp['product_name']?></a><br>
-                <span><?php echo $sp['price']?></span>
+                <a href="index.php?act=chitietsanpham&product_id=<?php echo $sp['product_id']?>"><?php echo $sp['product_name']?></a><br>
+                <span>$<?php echo $sp['price']?></span>
                             
             </div> 
 

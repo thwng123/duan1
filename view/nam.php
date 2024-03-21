@@ -22,7 +22,7 @@
                 <div class="pro">
                     <img src="../image/<?php echo $sp['image']?>" alt="">
                     <a href="index.php?act=chitietsanpham&product_id=<?php echo $sp['product_id']?>"><?php echo $sp['product_name']?></a><br>
-                    <span><?php echo $sp['price']?></span>
+                    <span>$<?php echo $sp['price']?></span>
                 </div>
             <?php 
                 }

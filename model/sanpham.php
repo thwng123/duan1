@@ -6,7 +6,7 @@ function addsp($ten,$tenanh,$gia,$soluong,$mota,$danhmuc){
     // echo $sql;
 }
 function listsp($kyw,$iddm){
-    $sql="SELECT * FROM `products` where 1";
+    $sql="SELECT * FROM `products`  WHERE 1 ";
     if($kyw!=""){
         $sql.=" and product_name like '%".$kyw."%'"; // nếu 
     }
@@ -21,6 +21,17 @@ function listsp($kyw,$iddm){
     return $listsp;
     // list sản phẩm
 }
+
+// function listsp1(){
+//     $sql="SELECT * FROM `products` INNER JOIN categories WHERE categories.cate_id = products.cate_id;";
+   
+  
+//     $listsp1=pdo_query($sql);
+//     return $listsp1;
+//     // list sản phẩm
+// }
+
+
 function deletesp(){
     $sql="DELETE FROM `products`WHERE product_id=".$_GET['id'];
     pdo_execute($sql);

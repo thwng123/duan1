@@ -10,7 +10,7 @@
             <h1 class="d-flex justify-content-center ">Sửa</h1>
             <div class="container " style="width: 80%">
         
-                <form action="index.php?act=update" method="post">
+                <form action="index.php?act=updatedm" method="post">
                   <div class="mt-3">
                     <span class="form-label">ID:</span>
                     <input type="text" class="form-control" disabled />

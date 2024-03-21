@@ -44,7 +44,7 @@
                         <div class="product">
                             <img src="../image/<?= $sp['image']?>" alt="">
                             <a href="index.php?act=chitietsanpham&product_id=<?php echo $sp['product_id']?>"><?= $sp["product_name"]?></a><br>
-                            <span><?= $sp['price']?></span>
+                            <span>$<?= $sp['price']?></span>
                         </div>
                     <?php
                         }
@@ -75,7 +75,7 @@
                         <div class="product">
                             <img src="../image/<?= $sp['image']?>" alt="">
                             <a href="index.php?act=chitietsanpham&product_id=<?php echo $sp['product_id']?>"><?= $sp["product_name"]?></a><br>
-                            <span><?= $sp['price']?></span>
+                            <span>$<?= $sp['price']?></span>
                         </div>
                     <?php
                         }
