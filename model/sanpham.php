@@ -22,6 +22,18 @@ function listsp($kyw,$iddm){
     // list sản phẩm
 }
 
+
+
+function searchProduct($kyw){
+    $sql="SELECT * FROM `products` WHERE 1 ";
+
+    if($kyw != ""){
+        $sql.= " AND `product_name` LIKE '%".$kyw."%' ";
+    }
+    $sp = pdo_query($sql);
+    return $sp;
+}
+
 // function listsp1(){
 //     $sql="SELECT * FROM `products` INNER JOIN categories WHERE categories.cate_id = products.cate_id;";
    
@@ -122,7 +134,7 @@ function updatesp($ten,$gia,$tenanh,$mota,$soluong,$danhmuc,$id){
        
      }
      pdo_execute($sql);
-
+     
     
   
        

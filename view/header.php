@@ -22,23 +22,21 @@
             </a>
         </div>
 
-        <form action="?act=search" method="post">
-            <div class="sreach">
-                <select name="cate" id="">
-                    <option value=""></option>
-                </select>
-                <input type="text" name="kyw"  placeholder="Search entire store here...">
-               
-                <button type="submit"><i class="fa-solid fa-search" style="font-size: 17px; color:#747474;padding:1px 6px "></i></button>
-            </div>  
-        </form>
+     
+        <div class="sreach">
+            <form action="index.php?act=search" method="post">    
+                    <input type="text" name="kyw"  placeholder="Search entire store here...">
+                    <button type="submit" name="btn" ><i class="fa-solid fa-search" style="font-size: 17px; color:#747474;padding:1px 6px "></i></button>
+                    <!-- <input type="submit" name="btn" value="sreach"> -->
+            </form>
+        </div>  
         <!-- <div class="sreach">
             <input type="text"  placeholder="Search entire store here...">
             
             <button ><i class="fa-solid fa-search" style="font-size: 17px; color:#747474;padding:1px 6px "></i></button>
         </div>   -->
         <div class="login">
-            <a href="#" class="user"> <i class="fa-solid fa-user" style="font-size: 20px; color:black; margin-right:15px "></i></a> 
+            <a href="index.php?act=dangnhap"> <i class="fa-solid fa-user" style="font-size: 20px; color:black; margin-right:15px "></i></a> 
             
             <a href="#" class="cart"><i class="fa-solid fa-shopping-basket" style=" font-size: 20px;color:black "></i></a> 
 

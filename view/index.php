@@ -40,6 +40,26 @@
                 $spnewnu = load_all_homenu();
                 include 'nu.php';
                 break;
+
+            case 'dangnhap':
+               
+                include 'dangnhap.php';
+                break;
+
+            case 'search':
+              
+                if(isset($_POST['btn'])){
+                    $kyw = $_POST['kyw'];
+                }else {
+                    $kyw = "";
+                }
+                
+                $pro = searchProduct($kyw);
+          
+                include 'search.php';
+                break;
+
+            
             
             default:
                 include 'home.php';
