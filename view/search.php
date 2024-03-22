@@ -1,5 +1,5 @@
 <hr>
-<div class="box-spct">
+<div class="box-spct" style="margin-bottom:20px">
     <ul>
         <li><a href="index.php?act=home">Trang chủ </a></li>
       
@@ -33,5 +33,5 @@
 
 
 
-<hr style="max-width:1100px; margin:0 auto; margin-bottom:65px">
+<hr style="max-width:1100px; margin:0 auto; margin-bottom:65px; margin-top:25px">
 <hr style="max-width:1100px; margin:0 auto;">
