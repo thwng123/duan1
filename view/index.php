@@ -29,9 +29,7 @@
                 }
                 
                 break;
-            case 'gioithieu':
-                include 'gioithieu.php';
-                break;
+           
             case 'nam':
                 $spnewnam = load_all_homenam();
                 include 'nam.php';
@@ -41,6 +39,15 @@
                 include 'nu.php';
                 break;
 
+            // case 'gioithieu':
+               
+            //     include '../gioithieu.php';
+            //     break;
+
+            // case 'lienhe':
+               
+            //     include '../lienhe1.php';
+            //     break;
             case 'dangnhap':
                
                 include 'dangnhap.php';
