@@ -2,6 +2,7 @@
 include '../model/pdo.php';
 include '../model/danhmuc.php';
 include '../model/sanpham.php';
+include '../model/khachhang.php';
 include './header.php';
 if(isset($_GET['act'])){
     $act=$_GET['act'];
@@ -170,6 +171,96 @@ if(isset($_GET['act'])){
               $listsp=listsp($kyw,$iddm);
               $listdm=listdm();
                include './sanpham/list.php';
+
+               case 'listkh':
+               
+                $listkh=listkh();
+             
+              
+  
+                  include './khachhang/list.php';
+                  break;
+               case 'addkh':
+                if(isset($_POST['btnsumbit'])){
+                  $ten=$_POST['ten'];
+                  $matkhau=$_POST['matkhau'];
+                  $email=$_POST['email'];
+                  $anh=$_FILES['anh'];
+                  $so=$_POST['so'];
+                  $vaitro=$_POST['vaitro'];
+                  $tenanh=$anh['name'];
+                  addkh($ten,$matkhau,$email,$so,$vaitro,$tenanh);
+
+             
+                 
+                 
+                 
+                
+                 
+                
+                 
+                    move_uploaded_file($anh['tmp_name'], '../image/' .$tenanh);
+                
+                 
+                
+                 
+              }
+             
+              
+              
+  
+                include './khachhang/add.php';
+                break;
+                case 'xoakh':
+       
+                  if(isset($_GET['id'])&&($_GET['id']>0)){
+                    deletekh();
+                   
+                   
+                   
+                    
+                 }
+                
+              
+              $listkh=listkh();
+               
+    
+                include './khachhang/list.php';
+               
+                break;
+                case 'suakh':
+                  if(isset($_GET['id'])&&($_GET['id']>0)){
+                      
+                      $kh=loadkhtheoid();
+                  }
+                  
+                
+                 
+                  include './khachhang/update.php';
+                 
+                  break;
+              case 'updatekh':
+                  
+                if(isset($_POST['btnsumbit'])){
+                  $ten=$_POST['ten'];
+                  $matkhau=$_POST['matkhau'];
+                  $email=$_POST['email'];
+                  $anh=$_FILES['anh'];
+                  $so=$_POST['so'];
+                  $vaitro=$_POST['vaitro'];
+                  $tenanh=$anh['name'];
+                $id=$_POST['id'];
+                updatekh($ten,$matkhau,$email,$so,$vaitro,$tenanh,$id);
+
+                 // nếu mà hình bằng roongx thì thêm hinh vào
+              
+                    move_uploaded_file($anh['tmp_name'], '../image/' .$tenanh);
+                  
+              }
+             
+       
+            $listkh=listkh();
+             include './khachhang/list.php';
                 
 
                
