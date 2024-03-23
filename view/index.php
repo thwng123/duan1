@@ -44,10 +44,10 @@
             //     include '../gioithieu.php';
             //     break;
 
-            // case 'lienhe':
+            case 'lienhe':
                
-            //     include '../lienhe1.php';
-            //     break;
+                include '../lienhe1.php';
+                break;
             case 'dangnhap':
                
                 include 'dangnhap.php';
