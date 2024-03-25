@@ -586,6 +586,91 @@ footer .box-about .infos ul li input[type="submit"]:hover {
     font-size: 13px;
 } 
 
+#login-form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+
+.box-login {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.box-login form .lable {
+    /* display: block; */
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.box-login form .form-group {
+    margin-bottom: 10px;
+} 
+    
+.box-login form .form-group input[type="text"],
+input[type="password"], input[type="email"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0 20px;
+  height: 48px;
+  /* font-size: 12px; */
+} 
+
+.box-login form  .dangnhap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+} 
+.box-login form  .dangnhap a {
+    color: #ff6a28;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 13px;
+} 
+
+.box-login form  .dangnhap a:hover {
+    /* color: #242424; */
+    text-decoration: underline;
+ 
+} 
+.box-login form  .btn {
+    padding: 5px 20px;
+    background-color: #ff6a28;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    /* display: flex; */
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.3s;
+    height: 34px;
+    text-transform: uppercase;
+
+}
+
+.box-login form  .btn:hover {
+    
+    background-color: #242424;
+}
+
+    
+
+  /* text-align: center; */
+
+
+
 
 
 

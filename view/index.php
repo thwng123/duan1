@@ -1,7 +1,9 @@
 <?php
+    session_start();
     include "../model/pdo.php";
     include "../model/sanpham.php";
     include "../model/danhmuc.php";
+    include "../model/khachhang.php";
     include 'header.php';
     include '../global.php';
 
@@ -48,10 +50,90 @@
                
             //     include '../lienhe1.php';
             //     break;
-            case 'dangnhap':
+            case 'dangky':
+                // SELECT `user_id`, `username`, `password`, `email`, `phone`, `role`, `image` FROM `user` WHERE 1
+                
+
+              
+                $errors = [];
+                if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                    // Kiểm tra các trường dữ liệu cụ thể của biểu mẫu
+                   
+                        $username = $_POST['username'];
+                        $password = $_POST['password'];
+                        $email = $_POST['email'];
+                        // $existingUser = checkUserExistence($email,$username);
+                       
+
+                        if(empty($username)){
+                            $errors['username'] = "Trường này không được để trống";
+                        }
+                        if(empty($password)){
+                            $errors['password'] = "Trường này không được để trống";
+                        }
+                        if(empty($email)){
+                            $errors['email'] = "Trường này không được để trống";
+                        }
+                        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+                            $errors['email'] = "Email không hợp lệ.";
+                        }
+              
+                     
+
+                        if(empty($errors)){
+                            setUser($username, $password, $email);
+                            echo '<script>alert("Bạn đã đăng ký thành công vui lòng đăng nhập");</script>';
+                            echo '<script>window.location.href = "index.php?act=dangnhap"</script>';
+                        }
+                
+                      
+                        
+                       
+                    
+                }
+                
+              
+              
                
+                include 'dangky.php';
+                break;
+            case 'dangnhap':
+                $errors = [];
+                if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                    // Kiểm tra các trường dữ liệu cụ thể của biểu mẫu
+                   
+                        $username = $_POST['username'];
+                        $password = $_POST['password'];
+
+                        if(empty($username)){
+                            $errors['username'] = "Trường này không được để trống";
+                        }
+                        if(empty($password)){
+                            $errors['password'] = "Trường này không được để trống";
+                        }
+                        
+                        if(empty($errors)){
+                            $checkUser = checkUser($username,$password);
+                            if(is_array($checkUser)){
+                                $_SESSION['username'] = $checkUser;
+                                echo '<script>window.location.href = "index.php?act=home"</script>';
+                            }else {
+                                $thongbao = "Tên người dùng hoặc mật khẩu không chính xác.";
+                            }
+                        }
+                        
+                
+                       
+                       
+                      
+                       
+                    
+                }
+                
                 include 'dangnhap.php';
                 break;
+
+            
 
             case 'search':
               
